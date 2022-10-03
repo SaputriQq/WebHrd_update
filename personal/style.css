@@ -1,0 +1,158 @@
+.table {
+  overflow: auto;
+  font-size: 14px;
+}
+
+/* sweetalert */
+.swal {
+  z-index: 10000;
+}
+
+tr:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* content modal */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.overlay-content {
+  /* position: relative; */
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay h3 {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay label {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.info-sisa {
+  display: inline-block;
+}
+
+.overlay .closebtn {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 60px;
+}
+
+.one {
+  height: 100px;
+  line-height: 50px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.two {
+  float: left;
+  background-color: #5e9fff;
+  color: white;
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #263238;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.icons {
+  padding-top: 1rem;
+}
+
+.company-name {
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
+  .table {
+    display: block;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .form-control {
+    margin-left: 10px;
+  }
+
+  #status {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .table {
+    font-size: 12px;
+  }
+
+  .company-name {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .company-name {
+    font-size: 10px;
+  }
+}
